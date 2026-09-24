@@ -146,7 +146,7 @@ public class OrdersScreen extends Screen {
             // Your own orders can't be delivered to, so send them somewhere useful
             // instead of bouncing them off an error.
             int stackAmount = Math.max(1, Math.min(order.getItem().getMaxStackSize(), order.getRemaining()));
-            buttons.add(configButton(mine ? "OWN-ORDER" : "ORDER", placeholders,
+            buttons.add(entryButton(mine ? "OWN-ORDER" : "ORDER", placeholders,
                     order.getItemCopy(stackAmount), responses -> {
                 click();
                 if (mine) {

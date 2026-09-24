@@ -86,7 +86,7 @@ public class MyOrdersScreen extends Screen {
 
         for (Order order : slice(results, session.getMyOrdersPage(), perPage())) {
             int stackAmount = Math.max(1, Math.min(order.getItem().getMaxStackSize(), order.getRemaining()));
-            buttons.add(configButton("ORDER", Placeholders.of(order),
+            buttons.add(entryButton("ORDER", Placeholders.of(order),
                     order.getItemCopy(stackAmount), responses -> {
                 click();
                 new ManageOrderScreen(plugin, player, order.getId()).show();

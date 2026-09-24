@@ -128,7 +128,7 @@ public class EnchantEditScreen extends Screen {
             placeholders.put("level", level == null ? "" : Text.roman(level));
             placeholders.put("status", level == null ? "off" : "on");
 
-            buttons.add(configButton(level == null ? "ENCHANT" : "ENCHANT-ACTIVE", placeholders,
+            buttons.add(entryButton(level == null ? "ENCHANT" : "ENCHANT-ACTIVE", placeholders,
                     null, responses -> {
                         click();
                         new EnchantLevelScreen(plugin, player, enchantment).show();

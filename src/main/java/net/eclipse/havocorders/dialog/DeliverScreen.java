@@ -155,7 +155,7 @@ public class DeliverScreen extends Screen {
             Map<String, String> quick = new HashMap<>(placeholders);
             quick.put("amount", NumberUtil.count(amount));
             quick.put("value", NumberUtil.money(amount * order.getUnitPrice()));
-            buttons.add(configButton("QUICK", quick, responses -> {
+            buttons.add(entryButton("QUICK", quick, responses -> {
                 Order current = order();
                 if (current == null) {
                     deny();

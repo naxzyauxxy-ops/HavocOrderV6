@@ -76,7 +76,7 @@ public class EnchantLevelScreen extends Screen {
             int chosen = level;
             Map<String, String> placeholders = new HashMap<>(screen);
             placeholders.put("level", Text.roman(chosen));
-            buttons.add(configButton("LEVEL", placeholders, responses -> {
+            buttons.add(entryButton("LEVEL", placeholders, responses -> {
                 ItemStack draft = session.getDraftItem();
                 if (draft == null) {
                     deny();

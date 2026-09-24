@@ -39,13 +39,14 @@ MENUS:
   ORDERS:
     TITLE: "&8☠ Server &8| &8Orders"
     FILL: false
+    HIDDEN: [ CLOSE ]
     STRUCTURE:
       - ". . . . . . . . ."
       - ". . . . . . . . ."
       - ". . . . . . . . ."
       - ". . . . . . . . ."
       - ". . . . . . . . ."
-      - "< o r s _ g _ y f"
+      - "< o r s g y f _ >"
     CHARS:
       CONTENT: "."
       PREVIOUS: "<"
@@ -163,7 +164,7 @@ MENUS:
     FILL: false
     STRUCTURE:
       - "_ _ _ i _ _ _ _ _"
-      - "_ _ v _ q _ x _ _"
+      - "_ _ v _ q _ z _ x"
       - "_ _ _ _ _ _ _ _ _"
     CHARS:
       CONTENT: "."
