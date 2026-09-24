@@ -45,18 +45,17 @@ MENUS:
       - ". . . . . . . . ."
       - ". . . . . . . . ."
       - ". . . . . . . . ."
-      - "< o f s r y i c >"
+      - "< o r s _ g _ y f"
     CHARS:
       CONTENT: "."
       PREVIOUS: "<"
-      NEXT: ">"
       SORT: "o"
-      FILTER: "f"
-      SEARCH: "s"
       REFRESH: "r"
+      SEARCH: "s"
+      INFO: "g"
       MY-ORDERS: "y"
-      INFO: "i"
-      CLOSE: "c"
+      FILTER: "f"
+      NEXT: ">"
     EMPTY: "&7Nothing matches those filters."
     BODY:
       - "&8Description"
@@ -101,32 +100,18 @@ MENUS:
           - ""
           - "&e▶ Click to manage"
       SORT:
-        MATERIAL: HOPPER
-        NAME: "&6&lORDER SORTING"
-        SELECTED-FORMAT: "&a| &a▶ {option}"
-        UNSELECTED-FORMAT: "&c| &7▶ {option}"
+        MATERIAL: CAULDRON
+        NAME: "&b&lSORT"
+        SELECTED-FORMAT: "&b• {option}"
+        UNSELECTED-FORMAT: "&f• {option}"
         LORE:
-          - "&8Description"
-          - ""
-          - "&6&lInformation:"
-          - "&fChange how orders are sorted"
-          - "&fon the order board"
-          - ""
-          - "&6&lCurrent Selection:"
           - "{sort_options}"
       FILTER:
-        MATERIAL: COMPASS
-        NAME: "&6&lCATEGORY FILTER"
-        SELECTED-FORMAT: "&a| &a▶ {option}"
-        UNSELECTED-FORMAT: "&c| &7▶ {option}"
+        MATERIAL: HOPPER
+        NAME: "&b&lFILTER"
+        SELECTED-FORMAT: "&b• {option}"
+        UNSELECTED-FORMAT: "&f• {option}"
         LORE:
-          - "&8Description"
-          - ""
-          - "&6&lInformation:"
-          - "&fShow only one kind of item"
-          - "&fon the order board"
-          - ""
-          - "&6&lCurrent Selection:"
           - "{filter_options}"
       SEARCH:
         MATERIAL: OAK_SIGN
@@ -221,9 +206,9 @@ MENUS:
     TITLE: "&8☠ Server &8| &8Deliver"
     FILL: false
     STRUCTURE:
-      - "_ _ _ i _ . . . ."
-      - "_ d _ A _ q _ _ _"
-      - "_ _ _ _ x _ _ _ _"
+      - "_ _ . . . . . _ _"
+      - "_ _ _ _ i _ _ _ _"
+      - "x _ A _ q _ _ _ d"
     CHARS:
       CONTENT: "."
       INFO: "i"
@@ -552,14 +537,11 @@ MENUS:
         NAME: "&6&l{name}"
         LORE: [ "&e▶ Click to select" ]
       FILTER:
-        MATERIAL: COMPASS
-        NAME: "&6&lCATEGORY FILTER"
-        SELECTED-FORMAT: "&a| &a▶ {option}"
-        UNSELECTED-FORMAT: "&c| &7▶ {option}"
+        MATERIAL: HOPPER
+        NAME: "&b&lFILTER"
+        SELECTED-FORMAT: "&b• {option}"
+        UNSELECTED-FORMAT: "&f• {option}"
         LORE:
-          - "&8Description"
-          - ""
-          - "&6&lCurrent Selection:"
           - "{filter_options}"
       SEARCH:
         MATERIAL: OAK_SIGN
