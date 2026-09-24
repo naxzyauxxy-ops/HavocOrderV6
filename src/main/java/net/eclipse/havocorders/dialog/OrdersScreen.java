@@ -3,6 +3,7 @@ package net.eclipse.havocorders.dialog;
 import net.eclipse.havocorders.HavocOrders;
 import net.eclipse.havocorders.ui.ScreenModel;
 import net.eclipse.havocorders.model.Order;
+import net.eclipse.havocorders.model.SortOption;
 import net.eclipse.havocorders.util.Category;
 import net.eclipse.havocorders.util.NumberUtil;
 import net.eclipse.havocorders.util.Text;
@@ -26,7 +27,7 @@ public class OrdersScreen extends Screen {
     }
 
     private int perPage() {
-        return Math.max(1, plugin.getConfig().getInt("SETTINGS.ORDERS-PER-PAGE", 8));
+        return Math.max(1, plugin.getConfig().getInt("SETTINGS.ORDERS-PER-PAGE", 45));
     }
 
     /**

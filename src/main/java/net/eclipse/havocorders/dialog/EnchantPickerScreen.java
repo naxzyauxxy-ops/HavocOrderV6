@@ -22,7 +22,7 @@ public class EnchantPickerScreen extends Screen {
     }
 
     private int perPage() {
-        return Math.max(1, plugin.getConfig().getInt("SETTINGS.ITEMS-PER-PAGE", 12));
+        return Math.max(1, plugin.getConfig().getInt("SETTINGS.ITEMS-PER-PAGE", 45));
     }
 
     private Map<String, String> screenPlaceholders(int size) {

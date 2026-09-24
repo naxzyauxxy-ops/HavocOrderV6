@@ -44,7 +44,7 @@ public class CollectScreen extends Screen {
     }
 
     private int perPage() {
-        return Math.max(1, plugin.getConfig().getInt("SETTINGS.COLLECT-PER-PAGE", 8));
+        return Math.max(1, plugin.getConfig().getInt("SETTINGS.COLLECT-PER-PAGE", 45));
     }
 
     private int pageBatch() {

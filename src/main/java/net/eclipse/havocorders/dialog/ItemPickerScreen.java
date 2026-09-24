@@ -26,7 +26,7 @@ public class ItemPickerScreen extends Screen {
     }
 
     private int perPage() {
-        return Math.max(1, plugin.getConfig().getInt("SETTINGS.ITEMS-PER-PAGE", 12));
+        return Math.max(1, plugin.getConfig().getInt("SETTINGS.ITEMS-PER-PAGE", 45));
     }
 
     private List<ItemCatalogue.Entry> results() {
